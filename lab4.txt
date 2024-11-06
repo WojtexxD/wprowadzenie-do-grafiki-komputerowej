@@ -1,0 +1,4 @@
+SSIM
+VMAF
+od obrazka nr.1 odejmujemy nr.2 
+pomnozyc roznice, aby mniejsze roznice bylo lepiej widac
