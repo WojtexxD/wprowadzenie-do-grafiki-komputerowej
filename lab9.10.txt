@@ -1,0 +1,39 @@
+tans:
+xn=xs+tx		=1*xs+0*ys+tx
+yn=ys+ty		=0*xs+1*ys+ty
+inne:
+xn=xs*mx		=mx*xs+0*ys+0
+yn=ys*my		=0*xs+my*ys+0
+obr:
+xn=+/- cos/sin(alfa)*xs +/- cos/sin(alfa)*ys		=+-cos/sin(alfa)*xs+-cos/sin ys*+0
+xn=+/- cos/sin(alfa)*xs +/- cos/sin(alfa)*ys 		=+-cos/sin(alfa)*xs+-ha ys*+0		(???)
+
+
+[1 0 tx] [xs] [xn]
+[0 1 ty]X[ys]=[yn]
+[0 0 1]  [1]  [1]
+
+[nx 0 0] [xs] [xn]
+[0 ny 0]X[ys]=[yn]
+[0 0 1]  [1]  [1]
+
+[cos cos 0]
+[cos cos 0]---||---
+[0 0 1]
+
+[nx 0 0] [xs xs xs ...] [xn ...]
+[0 ny 0]X[ys ys ys ...]=[yn ...]
+[0 0 1]  [1 1 1 ...]    [1  ...]
+
+(M2*M1)*Pkt			(kolejnosc nie jest istotna, ale ustawienie jest istotne)
+|
+|
+|
+M0c
+
+[nx 0 0] [xs xs xs ...] []
+[0 ny 0]X[ys ys ys ...]=[]
+[0 0 1]  [1 1 1	   ...] []
+
+
+odbicie lustrzane wzgledem x=2 (punkty przesuwamy o dwa w lewo pozniej lustrzane odbicie i przesuniecie punktow o dwa x w prawo) najpierw przesuwamy x i y do punktu 0,0 pozniej robimy przesuniecie/odbicie lustrzane i przesuwamy spowrotem w przeciwna strone tyle ile przesunelismy do punktu 0,0
