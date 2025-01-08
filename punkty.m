@@ -1,7 +1,20 @@
 filename = 'punktman.csv';
 M = csvread(filename);
-x = M(1:end,1);
-y = M(1:end,2);
+xs = M(1:end,1);
+ys = M(1:end,2);
 
+xsr = sum(xs)/length(xs);
+ysr = sum(ys)/length(ys);
 
-plot (x,y,"k square");
+xn = xs-xsr;
+yn = ys-ysr;
+
+deg = deg2rad(90);
+
+xn = xs*cos(deg)-ys*sin(deg);
+yn = xs*sin(deg)+ys*cos(deg);
+
+xn = xn/100;
+yn = yn/100;
+
+plot (xn,yn,"k square");
